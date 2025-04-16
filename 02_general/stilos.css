@@ -1,0 +1,24 @@
+* {
+    h1{
+        color: red;
+    }
+}
+
+.titulo2 {
+    color: aqua;
+}
+
+#titulo3 {
+    color: blue;
+}
+
+/* ----------- */
+.parrafo {
+    font-size: 1.5rem;
+    color: chartreuse;
+}
+
+#principal {
+    font-size: 3rem;
+    background-color: aqua;
+}

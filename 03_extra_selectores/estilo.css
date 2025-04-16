@@ -1,0 +1,13 @@
+
+/* estilos por agrupacion */
+h1, h2, h3, h4 {
+    background-color: aqua;
+}
+
+
+/* estilos por anidamiento */
+.padre  {
+    .tituloDiv {
+        background-color: transparent;
+    }
+}
