@@ -1,0 +1,134 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* ----------------------------------- */
+/* estilos con flex */
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	/* activar flexBox */
+	display: flex;
+
+	/* dar espacio entre elementos del padre */
+	gap: 20px;
+}
+
+.contenedor-conciertos {
+	/* dar tamaño segun el padre */
+	width: 70%;
+
+	/* activar flex */
+	display: flex;
+
+	/* si los elementos no caben , se ponen debajo */
+	flex-wrap: wrap;
+
+	/* espacio entre elementos hijos  */
+	gap: 20px;
+}
+
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+
+	/* dar medidas espesificas segun el padre */
+	width: calc(33.33% - 20px);
+
+}
+
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+
+	/* dar tamaño segune el padre */
+	width: 30%;
+
+	/* activar flex */
+	display: flex;
+
+	/* dar direccion */
+	flex-direction: column;
+
+	/* distubuir en espacio del padre */
+	justify-content: space-between;
+}
+
+.card .textos {
+	height: 100%;
+
+	/* activar flex */
+	display: flex;
+
+	/* ajustar la direccion */
+	flex-direction: column;
+
+	/* ajustar espacio de elementos con su contenedor padre */
+	justify-content: space-between;
+
+	/* alinear texto al centro */
+	align-items: center;
+}
+
+
+/* ----------------------------------- */
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+
+
+
+
+.banner ul {
+	list-style: none;
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 600px) {}
