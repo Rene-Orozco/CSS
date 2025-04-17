@@ -10,22 +10,36 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+/* ------------------------------------------- */
+/* estilos con grid */
 .contenedor {
 	width: 90%;
 	max-width: 1200px;
 	margin: auto;
 	padding: 40px 0;
 
-	
+	/* activamos grid */
+	display: grid;
+
+	/* dos columnas una de tres partes y una de 1 parte */
+	grid-template-columns: 3fr 1fr;
+
+	/* separacion entre elementos */
+	gap: 20px;
 }
 
-.titulo {
-	font-size: 24px;
-	padding: 20px 0;
-}
+
 
 .contenedor-conciertos {
 	
+	/* activamos grid */
+	display: grid;
+
+	/* tamaño de columnas quiero tres */
+	grid-template-columns: repeat(3, 1fr);
+
+	/* espaciado entre elementos */
+	gap: 20px;
 }
 
 .card {
@@ -44,7 +58,11 @@ body {
 .card .textos {
 	height: 100%;
 	
-	
+	/* activamos grid */
+	display: grid;
+
+	/* dos filas */
+	grid-template-rows: 1fr auto;
 }
 
 .banner {
@@ -54,7 +72,18 @@ body {
 	background-size: cover;
 	background-position: center center;
 
+	/* activamos grid */
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	align-items: center;
+}
 
+/* ------------------------------------------- */
+
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
 }
 
 .banner ul {
